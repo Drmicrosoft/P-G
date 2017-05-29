@@ -34,6 +34,13 @@ void setup() {
                                                 myservo4.attach(10);  // attaches the servo on pin 9 to the servo object              
                                                             myservo5.attach(11);  // attaches the servo on pin 9 to the servo object              
               
+              myservo.write(90);   
+myservo1.write(90);  
+              myservo2.write(90);   
+myservo3.write(90);  
+              myservo4.write(90);   
+myservo5.write(90);  
+              
 }
 char omar [6];
 char p1 [8][6]={{'6','3','D','6','3','U'},{'6','0','D','6','0','U'},{'1','E','D','1','E','U'},{'6','4','D','6','4','U'},{'1','3','D','1','3','U'},{'1','5','D','1','5','U'},{'1','4','D','1','4','U'},{'1','6','D','1','6','U'}};
@@ -99,15 +106,15 @@ for(j=0;j<8;j++)
     {
       if(omar1[0]==0)
 {         Serial.write("LED 0  is On\n");          
-myservo.write(0);   
+myservo.write(180);   
 myservo1.write(0);   
     omar1[0]=1;
 }
 else 
 {
           Serial.write("LED 0  is OFF\n");          
-myservo.write(92);   
-myservo1.write(92);   
+myservo.write(90);   
+myservo1.write(90);   
 omar1[0]=0;
 
   
@@ -121,15 +128,15 @@ omar1[0]=0;
       if(omar1[1]==0)
 {         Serial.write("LED 1  is On\n");          
 myservo.write(0);   
-myservo1.write(180);   
+myservo1.write(0);   
 
     omar1[1]=1;
 }
 else 
 {
           Serial.write("LED 1  is OFF\n");          
-myservo.write(92);   
-myservo1.write(92);   
+myservo.write(90);   
+myservo1.write(90);   
 
       omar1[1]=0;
 
@@ -141,15 +148,15 @@ myservo1.write(92);
 
           if(omar1[2]==0)
 {         Serial.write("LED 2  is On\n");          
-myservo.write(180);   
-myservo1.write(0);   
+myservo.write(0);   
+myservo1.write(180);   
     omar1[2]=1;
 }
 else 
 {
           Serial.write("LED 2  is OFF\n");          
-  myservo.write(92);   
-myservo1.write(92);   
+  myservo.write(90);   
+myservo1.write(90);   
       omar1[2]=0;
 
   
@@ -168,8 +175,8 @@ myservo1.write(180);
 else 
 {
           Serial.write("LED 3  is OFF\n");          
-myservo.write(92);   
-myservo1.write(92);   
+myservo.write(90);   
+myservo1.write(90);   
       omar1[3]=0;
 
   
@@ -181,17 +188,20 @@ myservo1.write(92);
 
           if(omar1[4]==0)
 {         Serial.write("LED 4  is On\n");          
-myservo.write(90);   
-    omar1[4]=1;
+myservo2.write(70);   
+
+      omar1[4]=1;
 }
 else 
 {
           Serial.write("LED 4  is OFF\n");          
-myservo.write(92);   
+myservo2.write(90);   
+  
       omar1[4]=0;
 
   
 }
+
 
     }
          else   if(j==5)
@@ -199,17 +209,23 @@ myservo.write(92);
 
             if(omar1[5]==0)
 {         Serial.write("LED 5  is On\n");          
-myservo.write(95);   
-    omar1[5]=1;
+myservo3.write(110); 
+      omar1[5]=1;
+
 }
+
 else 
 {
           Serial.write("LED 5  is OFF\n");          
-myservo.write(92);   
+myservo3.write(90);   
+  
       omar1[5]=0;
 
   
 }
+
+
+
 
     }
          else   if(j==6)
@@ -217,17 +233,22 @@ myservo.write(92);
 
              if(omar1[6]==0)
 {         Serial.write("LED 6  is On\n");          
-  myservo.write(80);   
-    omar1[6]=1;
+myservo2.write(120); 
+      omar1[6]=1;
+
 }
+
 else 
 {
           Serial.write("LED 6  is OFF\n");          
-myservo.write(92);   
-omar1[6]=0;
+myservo2.write(90);   
+  
+      omar1[4]=0;
 
   
 }
+
+
 
     }
          else   if(j==7)
@@ -235,23 +256,34 @@ omar1[6]=0;
 
               if(omar1[7]==0)
 {         Serial.write("LED 7 is On\n");          
-myservo.write(110);   
-omar1[7]=1;
+myservo3.write(80);   
+      omar1[7]=1;
+
 }
 else 
 {
-          Serial.write("LED 7 is OFF\n");          
-myservo.write(92);   
-omar1[7]=0;
+          Serial.write("LED 7  is OFF\n");          
+myservo3.write(90);   
+  
+      omar1[7]=0;
 
   
 }
+
+
+
+
 
     }
   }
   else 
   {
     i=0;
+    myservo.write(90);   
+myservo1.write(90);   
+    myservo2.write(90);   
+myservo3.write(90);   
+
   }
   
 }
