@@ -102,7 +102,7 @@ for(j=0;j<8;j++)
   if(c==1)
   {
         i=0;
-    if(j==0)
+    if(j==4)
     {
       if(omar1[0]==0)
 {         Serial.write("LED 0  is On\n");          
@@ -122,7 +122,7 @@ omar1[0]=0;
     
     
     }
-     else   if(j==1)
+     else   if(j==7)
     {
 
       if(omar1[1]==0)
@@ -143,7 +143,7 @@ myservo1.write(90);
   
 }
     }
-         else   if(j==2)
+         else   if(j==6)
     {
 
           if(omar1[2]==0)
@@ -163,7 +163,7 @@ myservo1.write(90);
 }
 
     }
-         else   if(j==3)
+         else   if(j==5)
     {
 
         if(omar1[3]==0)
@@ -183,7 +183,7 @@ myservo1.write(90);
 }
 
     }
-         else   if(j==4)
+         else   if(j==0)
     {
 
           if(omar1[4]==0)
@@ -204,7 +204,7 @@ myservo2.write(90);
 
 
     }
-         else   if(j==5)
+         else   if(j==1)
     {
 
             if(omar1[5]==0)
@@ -228,7 +228,7 @@ myservo3.write(90);
 
 
     }
-         else   if(j==6)
+         else   if(j==2)
     {
 
              if(omar1[6]==0)
@@ -251,7 +251,7 @@ myservo2.write(90);
 
 
     }
-         else   if(j==7)
+         else   if(j==3)
     {
 
               if(omar1[7]==0)
